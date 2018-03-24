@@ -38,7 +38,7 @@ require 'includes/common.php';
         </div>
  <div class="container">
             <div class="jumbotron">
-                <h3>WELCOME TO CHEMISTRY SECTION!</h3>
+                <h3>WELCOME TO PHYSICS SECTION!</h3>
                 
             </div>
             <div class="row ">
@@ -49,22 +49,8 @@ require 'includes/common.php';
                     <h3 class="text-danger">A textbook of Physical Chemistry<br />Price: Rs 250/-<br /> </h3>
                     <br />
                     <h3 class="text-danger">Author: OP Tandon</h3>
-                     <?php if (!isset($_SESSION['email']))
-                         { ?>                             
-                    <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>                 
-                <?php             
-                } else {              
-                    //We have created a function to check whether this particular product is added to cart or not.                      
-                               if (check_if_added_to_cart(4)) { //This is same as if(check_if_added_to_cart != 0)                     
-                                               echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';        
-                                                                        } else {                            
-                                                                                 ?>                          
-                    <a href="cart-add.php?id=4" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>          
-                     <?php                          
-                             }                        
-                             }                        
-                             ?> 
-                   
+                     <button class="btn btn-warning" value="Add to Cart" onclick="location.href='cart-add.php?id=4'">Add to Cart</button>
+                    
                 </div>
             </div>
             <hr />
@@ -77,50 +63,21 @@ require 'includes/common.php';
                     <h3 class="text-danger">Organic Chemistry for IITJEE<br />Price: Rs 300/-<br /> </h3>
                     <br />
                     <h3 class="text-danger">Author: Solomons and Fryhle's</h3>
-                    <?php if (!isset($_SESSION['email']))
-                         { ?>                             
-                    <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>                 
-                <?php             
-                } else {              
-                    //We have created a function to check whether this particular product is added to cart or not.                      
-                               if (check_if_added_to_cart(5)) { //This is same as if(check_if_added_to_cart != 0)                     
-                                               echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';        
-                                                                        } else {                            
-                                                                                 ?>                          
-                    <a href="cart-add.php?id=5" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>          
-                     <?php                          
-                             }                        
-                             }                        
-                             ?> 
-                   
+                    <button class="btn btn-warning" value="Add to Cart" onclick="location.href='cart-add.php?id=5'">Add to Cart</button>
+
                 </div>
             </div>
             <hr />
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    <img src="chemistry3.jpg"width='200px' height='70px' class="thumbnail" />
+                    <img src="chemistry3.jpg" class="thumbnail" />
                     
                 </div>
                 <div class="col-md-8 col-sm-6">
                     <h3 class="text-danger">Modern Approach to Chemical Calculations <br />Price: Rs 150/-<br /> </h3>
                     <br />
                     <h3 class="text-danger">Author: RC Mukherjee</h3>
-                     <?php if (!isset($_SESSION['email']))
-                         { ?>                             
-                    <p><a href="login.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p>                 
-                <?php             
-                } else {              
-                    //We have created a function to check whether this particular product is added to cart or not.                      
-                               if (check_if_added_to_cart(6)) { //This is same as if(check_if_added_to_cart != 0)                     
-                                               echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';        
-                                                                        } else {                            
-                                                                                 ?>                          
-                    <a href="cart-add.php?id=6" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>          
-                     <?php                          
-                             }                        
-                             }                        
-                             ?> 
-                   
+                    <button class="btn btn-warning" value="Add to Cart" onclick="location.href='cart-add.php?id=6'">Add to Cart</button>
                 </div>
             </div>
         
