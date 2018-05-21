@@ -8,7 +8,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>login</title>
+  <title>LOGIN</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

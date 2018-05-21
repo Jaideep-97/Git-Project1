@@ -11,7 +11,7 @@ require 'includes/common.php';
  <html>
     <head>
         
-        <title>physics</title>
+        <title>PHYSICS</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <style>
             body{
